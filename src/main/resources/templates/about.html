@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head th:include="/fragments/head :: head">
+    </head>
+<body>
+
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+
+    <!-- Header -->
+    <header th:fragment="navbar" id="header" class="header header-three header-sticky header-full-width clearfix">
+        <div th:include="/fragments/navbar :: navbar" class="container"></div>
+    </header>
+
+    <div class="sub-header" >
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <h1 class="title">关于我们</h1>
+            <p class="description">我们的征程是星辰和大海</p>
+        </div>
+    </div>
+
+    <div class="about-us-page">
+
+        <!-- Main Content -->
+        <main id="main" class="main">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p class="lead text-center">
+                            心码科技前身是由无码工作室演进而来,无码工作室成立于2013年,经过一年左右的发展,无码工作室正式转变为心码科技有限公司，公司坐落于高新科技产业园，是一家提供技术开发、行业产品解决方案、移动产品策划咨询为一体的创新型科技公司。目前已经为数百家公司提供了一体化产品解决方案和定制开发服务，产品和服务受到客户的一致好评。心码秉承“以用户为中心，不断提升用户体验”的理念，不断探索与创新，旨在为客户提供便捷、优质的产品和服务。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <section class="our-skills sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="feature-box-2">
+                                <h3 class="title text-uppercase">Create since 2016</h3>
+                                <p>
+                                    公司成员现人才储备及技术储备对个人/社会提供了极大的方便,我们秉承客户为主的宗旨,服务了近几十家企业和上百个人团体.
+                                </p>
+                                <a href="#" class="btn btn-primary btn-outline-black">阅读更多</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="progress-bars">
+                                <div class="progress" data-percentage="97">
+                                    <h5 class="title">Java EE</h5>
+                                    <div class="progress-bar">
+                                        <span class="progressed"></span>
+                                        <div class="completed"></div>
+                                    </div>
+                                </div>
+                                <div class="progress" data-percentage="95">
+                                    <h5 class="title">HTML5/CSS3/ES6</h5>
+                                    <div class="progress-bar">
+                                        <span class="progressed"></span>
+                                        <div class="completed"></div>
+                                    </div>
+                                </div>
+                                <div class="progress" data-percentage="90">
+                                    <h5 class="title">UnrealEngine 4</h5>
+                                    <div class="progress-bar">
+                                        <span class="progressed"></span>
+                                        <div class="completed"></div>
+                                    </div>
+                                </div>
+                                <div class="progress" data-percentage="85">
+                                    <h5 class="title">Android/React Native</h5>
+                                    <div class="progress-bar">
+                                        <span class="progressed"></span>
+                                        <div class="completed"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team -->
+            <section class="our-team our-team-2 sections">
+                <div class="container">
+                    <header class="section-header text-center">
+                        <h2 class="section-title">遇见·无码</h2>
+                        <span class="line-two"><span></span></span>
+                    </header>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3 col-team-member">
+                            <div class="team-member">
+                                <img th:src="@{/images/person/p-1.png}" alt="Member">
+                                <div class="overlay">
+                                    <div class="member-info">
+                                        <h3 class="title">MetalSteel</h3>
+                                        <p>UE4/JavaEE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-team-member">
+                            <div class="team-member">
+                                <img th:src="@{/images/person/p-2.png}" alt="Member">
+                                <div class="overlay">
+                                    <div class="member-info">
+                                        <h3 class="title">Jing</h3>
+                                        <p>PM/UI</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-team-member">
+                            <div class="team-member">
+                                <img th:src="@{/images/person/p-3.png}" alt="Member">
+                                <div class="overlay">
+                                    <div class="member-info">
+                                        <h3 class="title">BingWu</h3>
+                                        <p>JavaEE/MS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 col-team-member">
+                            <div class="team-member">
+                                <img th:src="@{/images/person/p-4.png}" alt="Member">
+                                <div class="overlay">
+                                    <div class="member-info">
+                                        <h3 class="title">PengWang</h3>
+                                        <p>Java/Android/RecatNative</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <section class="our-features our-features-2 sections">
+                <div class="container">
+                    <header class="section-header text-center">
+                        <h2 class="section-title">服务领域</h2>
+                        <span class="line-two"><span></span></span>
+                    </header>
+                </div>
+                <div class="features-items">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="feature-item feature-item-2 clearfix">
+                                    <div class="feature-img">
+                                        <img class="img-responsive" th:src="@{images/features/8.png}" alt="Image">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="title">个人</h3>
+                                        <p>为个人提供技术解决方案及服务,为您节省更多的时间</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="feature-item feature-item-2 clearfix">
+                                    <div class="feature-img">
+                                        <img class="img-responsive" th:src="@{images/features/9.png}" alt="Image">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="title">商家</h3>
+                                        <p>为商家提供便利的操作和客户提供便利的解决</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="feature-item feature-item-2 clearfix">
+                                    <div class="feature-img">
+                                        <img class="img-responsive" th:src="@{images/features/10.png}" alt="Image">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="title">企业</h3>
+                                        <p>为企业助力,为企业提供服务帮助企业更好的发展.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer th:include="/fragments/copyright :: footer"></footer>
+</div>
+
+<!-- Required Plugins and Scripts -->
+<script th:src="@{js/jquery-3.1.1.min.js}"></script>
+<script th:src="@{js/jquery-migrate.min.js}"></script>
+<script th:src="@{js/flexslider/jquery.flexslider-min.js}"></script>
+<script th:src="@{js/slicknav/jquery.slicknav.min.js}"></script>
+<script th:src="@{js/jquery.waypoints.min.js}"></script>
+<script th:src="@{js/scripts.js}"></script>
+</body>
+</html>

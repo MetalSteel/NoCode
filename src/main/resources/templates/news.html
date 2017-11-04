@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head th:include="/fragments/head :: head">
+    </head>
+<body>
+
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+
+    <!-- Header -->
+    <header th:fragment="navbar" id="header" class="header header-three header-sticky header-full-width clearfix">
+        <div th:include="/fragments/navbar :: navbar" class="container"></div>
+    </header>
+
+    <div class="sub-header">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <h1 class="title">最新资讯</h1>
+            <p class="description">每日分享最新工作室动态</p>
+        </div>
+    </div>
+
+    <!-- Container -->
+    <div class="container main-container blog-page">
+        <div class="row">
+            <div class="col-md-9">
+
+                <!-- Main Content -->
+                <main id="main" class="main">
+
+                    <article class="post-item clearfix format-standard has-post-thumbnail hentry">
+                        <div class="post-thumbnail">
+                            <a href="single.html"><img class="img-responsive" th:src="@{images/blog/1.jpg}" alt="Post Thumb"></a>
+                        </div>
+                        <header class="entry-header">
+                            <div class="entry-meta clearfix">
+                                <div class="post-cat"><a href="#">公司动态</a></div>
+                                <div class="post-author">
+                                    <div class="author-info-wrap">
+                                        <h4 class="author-title">MetalSteel</h4>
+                                        <span class="posted-on">12 12, 2016</span>
+                                    </div>
+                                    <img class="author-image" th:src="@{images/blog/a-1.jpg}" alt="Peter Blalock">
+                                </div>
+                            </div>
+                            <h2 class="entry-title"><a href="single.html" rel="bookmark">双十一,技术服务咨询8折起</a></h2>
+                        </header>
+                        <div class="entry-summary clearfix">
+                            <p>整个过程无需你全程跟进，只需在最开始确定好定制化需求。我知道你最想要的是什么：保证高质量的最舒适性！ 隐私、安全、放心！在这段时间内你可以：
+                                1,利用最后的大学时光、任性去High！
+                                2,更高的学历，为考研冲刺！
+                                3,职业技能补充，准备面向职业生涯！
+                                4,约会、开黑两不误！
+                                5,旅游、聚餐不耽误
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="post-item clearfix format-image has-post-thumbnail hentry">
+                        <div class="post-thumbnail">
+                            <a href="single.html"><img class="img-responsive" th:src="@{images/blog/2.jpg}" alt="Post Thumb"></a>
+                        </div>
+                        <header class="entry-header">
+                            <div class="entry-meta clearfix">
+                                <div class="post-cat"><a href="#">技术咨询</a></div>
+                                <div class="post-author">
+                                    <div class="author-info-wrap">
+                                        <h4 class="author-title">Steel</h4>
+                                        <span class="posted-on">12 12, 2016</span>
+                                    </div>
+                                    <img class="author-image" th:src="@{images/blog/a-1.jpg}" alt="Peter Blalock">
+                                </div>
+                            </div>
+                            <h2 class="entry-title"><a href="single.html" rel="bookmark">双十一,技术服务咨询8折起</a></h2>
+                        </header>
+                        <div class="entry-summary clearfix">
+                            <p>整个过程无需你全程跟进，只需在最开始确定好定制化需求。我知道你最想要的是什么：保证高质量的最舒适性！ 隐私、安全、放心！在这段时间内你可以：
+                                1,利用最后的大学时光、任性去High！
+                                2,更高的学历，为考研冲刺！
+                                3,职业技能补充，准备面向职业生涯！
+                                4,约会、开黑两不误！
+                                5,旅游、聚餐不耽误
+                            </p>
+                        </div>
+                    </article>
+
+                    <nav class="pagination-nav">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><span>...</span></li>
+                            <li><a href="#">6</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </main>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <aside id="sidebar" class="sidebar">
+                    <section class="widget widget_recent_posts">
+                        <h2 class="widget-title">最新文章</h2>
+                        <ul>
+                            <li>
+                                <div class="post-thumb">
+                                    <a href="#"><img th:src="@{images/widget/1.jpg}" alt="#"></a>
+                                </div>
+                                <div class="post-content">
+                                    <h3 class="post-title"><a href="#">双十一,毕业设计指导打8折</a></h3>
+                                    <span class="post-date">2天前</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-thumb">
+                                    <a href="#"><img th:src="@{images/widget/2.jpg}" alt="#"></a>
+                                </div>
+                                <div class="post-content">
+                                    <h3 class="post-title"><a href="#">双十一,毕业设计指导打8折</a></h3>
+                                    <span class="post-date">12 12, 2016</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-thumb">
+                                    <a href="#"><img th:src="@{images/widget/3.jpg}" alt="#"></a>
+                                </div>
+                                <div class="post-content">
+                                    <h3 class="post-title"><a href="#">双十一,毕业设计指导打8折</a></h3>
+                                    <span class="post-date">1周前</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-thumb">
+                                    <a href="#"><img th:src="@{images/widget/4.jpg}" alt="#"></a>
+                                </div>
+                                <div class="post-content">
+                                    <h3 class="post-title"><a href="#">双十一,毕业设计指导打8折</a></h3>
+                                    <span class="post-date">刚刚</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-thumb">
+                                    <a href="#"><img th:src="@{images/widget/5.jpg}" alt="#"></a>
+                                </div>
+                                <div class="post-content">
+                                    <h3 class="post-title"><a href="#">双十一,毕业设计指导打8折</a></h3>
+                                    <span class="post-date">1月前</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="widget widget_tag_cloud">
+                        <h2 class="widget-title">标签分类</h2>
+                        <div class="tagcloud">
+                            <a href="#">公司动态</a>
+                            <a href="#">技术咨询</a>
+                            <a href="#">名牌系列</a>
+                            <a href="#">工作</a>
+                            <a href="#">日志</a>
+                            <a href="#">团队建设</a>
+                            <a href="#">技术文章</a>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer th:include="/fragments/copyright :: footer"></footer>
+</div>
+
+<!-- Required Plugins and Scripts -->
+<script th:src="@{js/jquery-3.1.1.min.js}"></script>
+<script th:src="@{js/jquery-migrate.min.js}"></script>
+<script th:src="@{js/bootstrap.min.js}"></script>
+<script th:src="@{js/flexslider/jquery.flexslider-min.js}"></script>
+<script th:src="@{js/owl.carousel/owl.carousel.min.js}"></script>
+<script th:src="@{js/jquery-countTo/jquery.countTo.js}"></script>
+<script th:src="@{js/slicknav/jquery.slicknav.min.js}"></script>
+<script th:src="@{js/scripts.js}"></script>
+</body>
+</html>

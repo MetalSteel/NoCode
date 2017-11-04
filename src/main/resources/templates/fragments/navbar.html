@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="navbar">
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <div class="site-branding">
+                <div class="wrap">
+                    <h1 class="site-title"><a href="index.html" rel="home"><img th:src="@{images/t-logo.png}" alt="Antarctica"></a></h1>
+                    <!--<h1 class="site-title"><a href="index.html" rel="home">Antarctica</a></h1>-->
+                    <p class="site-description"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-9">
+            <div class="navigation-top clearfix">
+                <div class="search-form-wrap">
+                    <div id="search-toggle" class="search-toggle"><i class="fa fa-search" aria-hidden="true"></i></div>
+                    <form action="#" class="header-search-form">
+                        <input type="text" name="s" id="s" value="" placeholder="Search">
+                        <input type="submit" id="search-submit" value="Go">
+                    </form>
+                </div>
+                <nav id="site-navigation" class="main-navigation">
+                    <div class="menu-primary-container">
+                        <ul class="menu-primary clearfix">
+                            <li><a th:href="@{/index}">主页</a></li>
+                            <li><a th:href="@{/news}">最新资讯</a></li>
+                            <li><a th:href="@{/contact}">联系我们</a></li>
+                            <li><a th:href="@{/about}">关于我们</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

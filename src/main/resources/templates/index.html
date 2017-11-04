@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head th:include="/fragments/head :: head">
+    </head>
+<body class="home">
+
+<div id="fakeLoader" class="fakeLoader"></div>
+
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+
+    <!-- Header -->
+    <header th:fragment="navbar" id="header" class="header header-three header-sticky header-full-width clearfix">
+        <div th:include="/fragments/navbar :: navbar" class="container"></div>
+    </header>
+	<!-- Slider One -->
+    <div class="flexslider sliders slider-one">
+        <ul class="slides">
+            <li>
+                <div class="slide-caption">
+                    <div class="slide-text">
+                        <span>在这里启航</span>
+                        <h2><a href="#">心中有码,无码编程</a></h2>
+                        <p>
+                            心码科技是一家专注于提供技术服务的公司.
+                        </p>
+                        <a href="#" class="btn btn-default">阅读更多</a>
+                        <a href="#" class="btn btn-primary">立即咨询</a>
+                    </div>
+                </div>
+                <img th:src="@{/images/slider/slider-v1-img-1.jpg}" alt="Slider Image">
+            </li>
+            <li>
+                <div class="slide-caption">
+                    <div class="slide-text">
+                        <span>在这里起航</span>
+                        <h2><a href="#">心中有码,无码编程</a></h2>
+                        <p>
+                            心码科技是一家专注于提供技术服务的公司.
+                        </p>
+                        <a href="#" class="btn btn-default">阅读更多</a>
+                        <a href="#" class="btn btn-primary">立即咨询</a>
+                    </div>
+                </div>
+                <img th:src="@{images/slider/slider-v1-img-3.jpg}" alt="Slider Image">
+            </li>
+        </ul>
+    </div>
+
+    <!-- About -->
+    <section class="about-us sections section-padding">
+        <div class="container">
+            <header class="section-header text-center">
+                <h3 class="section-sub-title">做最好的技术服务</h3>
+                <h2 class="section-title">Who We Are</h2>
+                <span class="line"></span>
+                <p>
+                    心码科技是由无码工作室演进而来的一家专门做技术服务的平台,
+                    工作室常驻Developers近15名成员,服务/实习生连接了近十所高校
+                </p>
+            </header>
+
+            <div class="our-services-carousel owl-carousel owl-theme">
+                <div class="service-item">
+                    <h3 class="title">网站开发</h3>
+                    <p>自工作室成立以来专注于网站业务开发,提供Java企业级开发服务及支持,为近10家大型企业的官网,OA系统等提供技术支持</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="service-item">
+                    <h3 class="title">移动开发</h3>
+                    <p>专业UI设计团队以及Android开发团队,开发完成的APP系统平台兼容性强,高可用后台服务,全面保障企业信息及用户数据.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="service-item">
+                    <h3 class="title">VR开发</h3>
+                    <p>VR（Virtual Reality）即虚拟现实.工作室拥有虚幻4引擎商业项目案例,可生成可交互的三维环境,实现仿真效果使用户沉浸到虚拟环境中.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="service-item">
+                    <h3 class="title">HTML5</h3>
+                    <p>超文本标记语言开发,适应性极强,可在PC、手机端兼容,更短的启动时间,更快的联网速度,运行流畅无BUG.适用网游、互动游戏、网页多媒体等内容开发.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="service-item">
+                    <h3 class="title">产品设计</h3>
+                    <p>包括UI、UE设计等,将开发与设计两方面剥离开来,可单独设计原型等,项目操作性更强,选择性更多.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="service-item">
+                    <h3 class="title">微信平台开发</h3>
+                    <p>基于微信平台的技术性开发,可开发包括微网站、微后台、微商城等内容.企业可根据自我需要以及商业需求定制开发最适合自己的微信开发内容.开发之后用户使用无卡顿,运行稳定流畅,兼容性极强.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="service-item">
+                    <h3 class="title">物联网/云计算/大数据开发</h3>
+                    <p>通过代码编程等开发方式可实现软件与硬件对接和数据上传、存储、采集等内容.开发完成后运行流畅不卡顿,独有加密处理,保障全方位安全.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="our-portfolio our-portfolio-1 sections">
+        <div class="container">
+            <header class="section-header text-center">
+                <h3 class="section-sub-title">我们的服务</h3>
+                <h2 class="section-title">产品列表</h2>
+                <span class="line"></span> 
+            </header>
+        </div>
+        <div class="portfolio-items-container row no-padding">
+            <div class="col-xs-6 col-lg-3 portfolio-post web-design branding">
+                <article class="portfolio-post-item">
+                    <img th:src="@{images/portfolio/p1.jpg}" style="height: 230px;" alt="">
+                    <div class="portfolio-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title"><a href="portfolio-single.html">建筑劳务实名制系统</a></h3>
+                            <span class="portfolio-cat">系列 / 物联网系统</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-xs-6 col-lg-3 portfolio-post logo creative">
+                <article class="portfolio-post-item">
+                    <img th:src="@{images/portfolio/p2.jpg}" style="height: 230px;" alt="">
+                    <div class="portfolio-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title"><a href="portfolio-single.html">好多多购物APP</a></h3>
+                            <span class="portfolio-cat">系列 / 移动APP</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-xs-6 col-lg-3 portfolio-post web-design branding">
+                <article class="portfolio-post-item">
+                    <img th:src="@{images/portfolio/p3.jpg}" style="height: 230px;" alt="">
+                    <div class="portfolio-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title"><a href="portfolio-single.html">国际城智能家居系统</a></h3>
+                            <span class="portfolio-cat">系列 / 物联网系统</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-xs-6 col-lg-3 portfolio-post logo creative">
+                <article class="portfolio-post-item">
+                    <img th:src="@{images/portfolio/p4.jpg}" style="height: 230px;" alt="">
+                    <div class="portfolio-content-wrapper">
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title"><a href="portfolio-single.html">国际城虚拟样板间系统</a></h3>
+                            <span class="portfolio-cat">系列 / 虚拟现实</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter -->
+    <section class="counter counter-1 sections">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter-content text-center">
+                        <h3 class="counter-digit"><span data-from="0" data-to="452" data-speed="200">452</span></h3>
+                        <h4 class="counter-desc">Design Projects</h4>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter-content text-center">
+                        <h3 class="counter-digit"><span data-from="0" data-to="125" data-speed="200">125</span>+</h3>
+                        <h4 class="counter-desc">Team Members</h4>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter-content text-center">
+                        <h3 class="counter-digit"><span data-from="0" data-to="468" data-speed="200">468</span></h3>
+                        <h4 class="counter-desc">Cup Of Coffee</h4>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="counter-content text-center">
+                        <h3 class="counter-digit counted"><span data-from="0" data-to="554" data-speed="200">554</span>+</h3>
+                        <h5 class="counter-desc">Line of Codes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="our-features our-features-1 sections section-padding">
+        <div class="container">
+            <header class="section-header text-center">
+                <h3 class="section-sub-title">关于我们</h3>
+                <h2 class="section-title">工作理念</h2>
+                <span class="line"></span>
+                <p>专业的定制化团队、高效的工作效率、不同风格的工程师选择，打造出高水平应用程序。我们最懂你！ </p>
+            </header>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="wide-image">
+                        <img class="img-responsive aligncenter" th:src="@{images/features/1.png}" alt="Feature Image">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <ul class="features-list list-unstyled clearfix">
+                        <li>
+                            <div class="feature-item feature-item-1 clearfix">
+                                <div class="feature-img">
+                                    <img class="img-responsive" th:src="@{images/features/2.png}" alt="Image">
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="title">软件 & 开发</h3>
+                                    <span class="line"></span>
+                                    <p>让每一行代码都保持应有的活力.让每一款软件赋予色彩</p>
+                                </div>
+                            </div>
+                            <div class="feature-item feature-item-1 clearfix">
+                                <div class="feature-img">
+                                    <img class="img-responsive" th:src="@{images/features/3.png}" alt="Image">
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="title">虚拟现实</h3>
+                                    <span class="line"></span>
+                                    <p>虚幻引擎为虚幻而生.却与虚幻与众不同,带给你最真实的不一样世界的感受</p>
+                                </div>
+                            </div>
+                            <div class="feature-item feature-item-1 clearfix">
+                                <div class="feature-img">
+                                    <img class="img-responsive" th:src="@{images/features/4.png}" alt="Image">
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="title">UI设计</h3>
+                                    <span class="line"></span>
+                                    <p>艺术家的畅想.将美好的事物跃然而上,留在最美的Screen</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-item feature-item-1 clearfix">
+                                <div class="feature-img">
+                                    <img class="img-responsive" th:src="@{images/features/5.png}" alt="Image">
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="title">网站开发</h3>
+                                    <span class="line"></span>
+                                    <p>页面色彩随心而变,极致的响应速度是用户的直观感受.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item feature-item-1 clearfix">
+                                <div class="feature-img">
+                                    <img class="img-responsive" th:src="@{images/features/6.png}" alt="Image">
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="title">移动开发</h3>
+                                    <span class="line"></span>
+                                    <p>小世界连接大精彩.将每一款APP打造到极致是我们工作室的执着追求与实施</p>
+                                </div>
+                            </div>
+                            <div class="feature-item feature-item-1 clearfix">
+                                <div class="feature-img">
+                                    <img class="img-responsive"th:src="@{images/features/7.png}" alt="Image">
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="title">技术服务</h3>
+                                    <span class="line"></span>
+                                    <p>为每一款产品的售后提供最可靠真实的技术服务,让每一个企业/个人放开双手.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription -->
+    <section class="subscribe sections section-padding">
+        <div class="container">
+            <h3 class="title">订阅我们的资讯</h3>
+            <form action="#" method="post" class="subscribe-form" novalidate="novalidate">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="form-group">
+                            <input type="text" name="name" id="first-name" placeholder="请输入姓名" required="required">
+                            <i class="fa fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="请输入Email" required="required">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-3">
+                        <div class="form-group">
+                            <input type="submit" value="订阅我们" id="subscribe-submit" class="btn-submit">
+                            <i class="fa fa-paper-plane-o"></i>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <p>为每一位客户更好的服务,是我们工作室的工作理念与宗旨.</p>
+            <p><strong>We Will Do Better.</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer th:include="/fragments/copyright :: footer"></footer>
+</div>
+
+<!-- Required Plugins and Scripts -->
+<script th:src="@{js/jquery-3.1.1.min.js}"></script>
+<script th:src="@{js/jquery-migrate.min.js}"></script>
+<script th:src="@{js/bootstrap.min.js}"></script>
+<script th:src="@{js/flexslider/jquery.flexslider-min.js}"></script>
+<script th:src="@{js/owl.carousel/owl.carousel.min.js}"></script>
+<script th:src="@{js/jquery-countTo/jquery.countTo.js}"></script>
+<script th:src="@{js/jquery.waypoints.min.js}"></script>
+<script th:src="@{js/slicknav/jquery.slicknav.min.js}"></script>
+<script th:src="@{js/lightcase/vendor/jQuery/jquery.events.touch.js}"></script>
+<script th:src="@{js/lightcase/js/lightcase.js}"></script>
+<script th:src="@{js/fakeLoader/fakeLoader.min.js}"></script>
+<script th:src="@{js/scripts.js}"></script>
+</body>
+</html>

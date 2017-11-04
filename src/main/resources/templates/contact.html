@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head th:include="/fragments/head :: head">
+    </head>
+<body>
+
+<!-- Page Wrapper -->
+<div class="page-wrapper">
+
+    <!-- Header -->
+    <header th:fragment="navbar" id="header" class="header header-three header-sticky header-full-width clearfix">
+        <div th:include="/fragments/navbar :: navbar" class="container"></div>
+    </header>
+
+    <div class="sub-header small">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <h1 class="title">联系我们</h1>
+        </div>
+    </div>
+    <!-- Container -->
+    <div class="container main-container contact-page">
+
+        <!-- Main Content -->
+        <main id="main" class="main">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3 class="section-title">通讯方式</h3>
+                    <p class="section-description">本公司唯一认证的联系方式,其他盗版信息或冒充本工作室的联系方式请严谨,注意防范欺诈等恶劣网络行为!</p>
+                    <ul class="list-unstyled contacts">
+                        <li>
+                            <span class="title">客服QQ:</span>
+                            <div class="content">
+                                <address>
+                                    1772542280 | 1430350167 | 2391345853
+                                </address>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="title">通讯电话:</span>
+                            <div class="content">
+                                <p>+86 18964780700 - <span>客户经理</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="title">Email:</span>
+                            <div class="content ">
+                                <p><a href="mailto:wanggang225@163.com">wanggang225@163.com</a>- <span>客户经理</span></p>
+                                <p><a href="mailto:2391345853@qq.com">2391345853@qq.com</a>- <span>技术经理</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="title">官方微信:</span>
+                            <div class="content">
+                               <img class="img-responsive" th:src="@{/images/wechat.jpg}" style="width: 200px;"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <h3 class="section-title">联系我们</h3>
+                    <form id="contact-form" class="contact-form" method="post" action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><input type="text" name="name" placeholder="姓名*" class="required" title="*请输入合法的姓名"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><input type="text" name="qq" placeholder="QQ*" class="required" title="*请输入合法的QQ"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><input type="email" name="email" placeholder="邮箱"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><input type="text" name="phone" placeholder="手机号码"></p>
+                            </div>
+                            <div class="col-xs-12">
+                                <p><textarea name="message" placeholder="请输入消息"></textarea></p>
+                            </div>
+                            <div class="col-xs-12">
+                                <input type="submit" class="submit-button" value="发送消息">
+                                <img id="progress-loader" src="images/ajax-loader.gif" alt="Sending....">
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="status"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer th:include="/fragments/copyright :: footer"></footer>
+</div>
+
+<!-- Required Plugins and Scripts -->
+<script th:src="@{js/jquery-3.1.1.min.js}"></script>
+<script th:src="@{js/jquery-migrate.min.js}"></script>
+<script th:src="@{js/bootstrap.min.js}"></script>
+<script th:src="@{js/slicknav/jquery.slicknav.min.js}"></script>
+<script th:src="@{js/jquery.form.min.js}"></script>
+<script th:src="@{js/jquery.validate.min.js}"></script>
+<script th:src="@{js/scripts.js}"></script>
+</body>
+</html>
